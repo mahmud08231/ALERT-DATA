@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en-NG">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Buy Gift Card · ALERT DATA</title>
+  <meta name="description" content="Buy gift cards with instant manual-fulfillment order handling from ALERT DATA.">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="app-page gift-page">
+  <header class="app-header container"><a href="/" class="brand"><span class="brand-mark"><i></i><i></i><i></i></span><span>ALERT <b>DATA</b></span></a><div class="app-user"><a href="/pages/login.html" class="text-link">Log in</a><a href="/pages/register.html" class="button button-small">Create account</a></div></header>
+  <main class="gift-shell container">
+    <div class="gift-heading"><div><a class="back-link" href="/">← Back to ALERT DATA</a><span class="eyebrow">DIGITAL VALUE, MADE SIMPLE</span><h1>Buy Gift Card</h1><p>Instant Code/Card Number &amp; PIN Delivery</p></div><div class="gift-rate-note">GBP rate<br><strong id="exchange-rate">₦2,118</strong></div></div>
+    <div id="gift-alert" class="alert hidden"></div>
+    <div class="gift-layout">
+      <section class="gift-form-card">
+        <div class="step-heading"><span>01</span><div><strong>Select Country <i>*</i></strong><small>Choose where the card will be used.</small></div></div>
+        <div class="combo" id="country-combo"><button type="button" class="combo-trigger" id="country-trigger">🌐 <span>Select a country...</span><b>⌄</b></button><div class="combo-menu hidden" id="country-menu"><input id="country-search" placeholder="Search..." autocomplete="off"><div id="country-options" class="combo-options"></div></div></div>
+        <div class="step-heading step-gap"><span>02</span><div><strong>Select Gift Card <i>*</i></strong><small>Search by brand or card type.</small></div></div>
+        <div class="combo" id="card-combo"><button type="button" class="combo-trigger disabled" id="card-trigger" disabled><span>Select a country first...</span><b>⌄</b></button><div class="combo-menu hidden" id="card-menu"><input id="card-search" placeholder="Search and select a gift card..." autocomplete="off"><div id="card-options" class="combo-options"></div></div></div>
+        <div class="step-heading step-gap"><span>03</span><div><strong>Purchase Details</strong><small>Set your amount and quantity.</small></div></div>
+        <div class="detail-box"><label>Amount (GBP) <i>*</i></label><div class="stepper"><button type="button" id="amount-minus">−</button><input id="amount-input" type="number" step="0.01" value="5.00" disabled><button type="button" id="amount-plus">＋</button></div><div class="range-copy">Min: GBP <span id="min-amount">5.0000</span> <span>·</span> Max: GBP <span id="max-amount">78.2300</span></div></div>
+        <div class="detail-box"><label>Quantity <i>*</i></label><div class="stepper"><button type="button" id="quantity-minus">−</button><input id="quantity-input" type="number" value="1" min="1" max="20" readonly><button type="button" id="quantity-plus">＋</button></div></div>
+      </section>
+      <aside class="gift-summary-card"><span class="eyebrow">ORDER SUMMARY</span><h2>Ready when you are.</h2><div class="summary-line"><span>Card</span><strong id="summary-card">Select a gift card</strong></div><div class="summary-line"><span>Country</span><strong id="summary-country">Select a country</strong></div><div class="summary-line"><span>Unit price</span><strong id="unit-price">NGN 0.00 x 1</strong></div><div class="total-block"><span>TOTAL COST TO YOU</span><strong id="total-cost">NGN 0.00</strong></div><button id="pay-button" class="button full" disabled>Pay NGN 0.00 <span>→</span></button><small class="manual-note">Manual fulfillment for now. No real gift-card or payment API is called on this page.</small></aside>
+    </div>
+  </main>
+  <div id="gift-pin-modal" class="modal hidden"><div class="modal-card"><button class="modal-close" id="close-gift-modal">×</button><span class="eyebrow">SECURE CHECKOUT</span><h2>Enter your wallet PIN.</h2><p class="muted">Your wallet will only be charged if the balance covers the order.</p><div id="gift-pin-error" class="alert hidden"></div><form id="gift-pin-form" class="stack-form"><input id="gift-pin" type="password" inputmode="numeric" maxlength="6" pattern="[0-9]{4,6}" placeholder="••••" required><button class="button full" type="submit">Confirm gift-card order <span>→</span></button></form></div></div>
+  <script src="/js/api.js"></script><script src="/js/gift-cards.js"></script>
+</body>
+</html>

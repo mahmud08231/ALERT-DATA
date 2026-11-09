@@ -1,0 +1,8 @@
+ALERT DATA v3
+
+This build includes everything from v2 plus Gift Cards visibly added to the logged-in dashboard:
+- Gift cards item in the dashboard sidebar
+- Buy gift cards quick-action card on the dashboard overview
+- Link to /gift-cards from the dashboard
+
+Build date: 2026-11-08

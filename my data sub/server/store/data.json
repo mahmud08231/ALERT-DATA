@@ -1,0 +1,52 @@
+{
+  "users": [
+    {
+      "id": "usr_1794186431245_wrp17u",
+      "name": "ALERT DATA Admin",
+      "email": "admin@alertdata.ng",
+      "passwordHash": "$2a$12$J0rb97M0BraHQxwhZOHeX.KHfxQWvIk/Vrd0330KjrR1YT4z4Rb9i",
+      "walletPinHash": "$2a$12$kU.dhBVgkCvpRUcYgdkJ0Oye/d8f4tWUDT5B1hzevn6bsKyLXlBW6",
+      "walletBalance": 0,
+      "role": "admin",
+      "emailVerified": true,
+      "createdAt": "2026-11-09T01:07:12.084Z"
+    },
+    {
+      "id": "usr_1794186561987_omnx0w",
+      "name": "abdulrasheed",
+      "email": "abdulrasheedyasin1@gmail.com",
+      "passwordHash": "$2a$12$fQ6uwO21aLXSgH9BVijxoOSq.QKCxEEmznrBeQZIZq7pH4/vq9h8i",
+      "walletPinHash": "$2a$12$FaP6WIlMVCa9OO/D1Ywpce6rQvDfVRM/NqIQTtJvAp6tnyq7wJpOK",
+      "walletBalance": 0,
+      "role": "user",
+      "emailVerified": true,
+      "createdAt": "2026-11-09T01:09:22.803Z"
+    }
+  ],
+  "orders": [],
+  "transactions": [
+    {
+      "id": "tx_1794188995233_x8sztf",
+      "userId": "usr_1794186561987_omnx0w",
+      "type": "wallet_funding",
+      "amount": 100,
+      "status": "pending",
+      "reference": "AD-1794188995233-A1AD3D",
+      "createdAt": "2026-11-09T01:49:55.233Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "ntf_1794188971604_l7vptd",
+      "userId": "usr_1794186561987_omnx0w",
+      "type": "login",
+      "title": "New sign-in",
+      "message": "Your ALERT DATA account was signed in after email verification.",
+      "reference": null,
+      "createdAt": "2026-11-09T01:49:31.605Z",
+      "readAt": null
+    }
+  ],
+  "verificationCodes": [],
+  "resetTokens": []
+}
